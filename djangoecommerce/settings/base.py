@@ -25,7 +25,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__fil
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['django-ecommerce-mparkcode.c9users.io']
+ALLOWED_HOSTS = ['django-ecommerce-mparkcode.c9users.io', 'mpark-djangoecommerce.herokuapp.com']
 
 
 # Application definition
