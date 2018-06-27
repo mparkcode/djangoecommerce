@@ -2,7 +2,7 @@
 {% load static from staticfiles %}
 {% block content %}
     {% for product in products%}
-        <img src="{{MEDIA_URL}}{{product.image}}"></img>
+        <img height="300" src="{{MEDIA_URL}}{{product.image}}"></img>
         <h1>{{ product.name}} by {{ product.brand }}</h1>
         <p>{{product.description}}</p>
         <p>Today's price: {{product.price}}</p>
