@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'storages',
     'django_forms_bootstrap',
     'products',
-    'cart'
+    'cart',
+    'checkout'
 ]
 
 MIDDLEWARE = [
@@ -111,4 +112,8 @@ USE_L10N = True
 
 USE_TZ = True
 
+STRIPE_PUBLISHABLE = os.environ.get('STRIPE_PUBLISHABLE_KEY')
+STRIPE_SECRET = os.environ.get('STRIPE_SECRET_KEY')
+
+MESSAGE_STORAGE = "django.contrib.messages.storage.session.SessionStorage"
 

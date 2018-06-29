@@ -24,7 +24,5 @@
     <hr>
     <h2 style="display:inline-block">Cart total: {{total}}</h2>
     <hr>
-    <form>
-        <input class="btn btn-lg btn-success" type="submit" value="Checkout"/>
-    </form>
+    <a href="{% url 'checkout' %}" class="btn btn-lg btn-success">Checkout</a>
 {% endblock %}
