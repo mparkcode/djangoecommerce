@@ -30,7 +30,7 @@ def add_to_cart(request):
     request.session['cart'] = cart 
     
     #  Redirect somewhere
-    return HttpResponse(cart[id])
+    return redirect('index')
     
 def remove_from_cart(request):
     
